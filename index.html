@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processando...</title>
+    <style>
+        body { margin: 0; padding: 0; }
+        iframe { width: 100vw; height: 100vh; border: none; position: absolute; top: 0; left: 0; }
+        
+        .caixa-de-cookies {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .accept-btn {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .accept-btn:hover {
+            background-color: #e04e2d;
+        }
+    </style>
+</head>
+<body onclick="redirectToAffiliate()">
+    <iframe src="http://femipro24.com/text.php#aff=kayanlins"></iframe>
+
+    <div class="caixa-de-cookies">
+        <p>Usamos cookies para melhorar sua experiência. Ao clicar em qualquer lugar, você concorda com nosso uso de cookies.</p>
+        <button class="accept-btn" onclick="redirectToAffiliate()">Aceitar</button>
+    </div>
+
+    <script>
+        function redirectToAffiliate() {
+            window.location.href = "http://femipro24.com/text.php#aff=kayanlins";
+        }
+    </script>
+</body>
+</html>
